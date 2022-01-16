@@ -1,8 +1,8 @@
 {
     "name": "jocelimjr/auto-getters-and-setters",
-    "description": "Auto getters and setter to class",
+    "description": "Auto getters and setters (Getter/Setter; Get/Set)",
     "homepage": "https://github.com/jocelimjr2000/AutoGettersAndSetters",
-    "keywords": ["getter", "setter", "getters", "setters", "trait"],
+    "keywords": ["getter", "setter", "getters", "setters", "get", "set", "trait"],
     "license": "MIT",
     "authors":
     [
