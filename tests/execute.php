@@ -3,9 +3,13 @@ require_once '../vendor/autoload.php';
 
 use Tests\TestClass;
 use Tests\TestClass2;
+use Tests\TestClass3;
+use Tests\TestClass4;
 
 $class = new TestClass;
 $class2 = new TestClass2;
+$class3 = new TestClass3;
+$class4 = new TestClass4;
 
 echo " <br> ===================================================================================================================== <br>";
 echo " TEST 1 (TestClass.php) : Set and Get valid parameter";
@@ -99,3 +103,43 @@ try {
         echo '<b>Error Message:</b> '. $e->getMessage(). '<br>';
         echo '<b>Error Code:</b> ' . $e->getCode() . '<br>';
 }
+
+
+
+
+echo '<br><br>';
+echo " <br> ===================================================================================================================== <br>";
+echo " TEST 9 (TestClass3.php) : Convert all values to array, object and json";
+echo " <br> ===================================================================================================================== <br><br>";
+
+$class3->setParamA("Modified value A :)")
+        ->setParamB("Modified value B :)")
+        ->setParamC("Modified value C :)");
+
+echo '->toArray() <br>';
+echo '<pre>';
+var_dump($class3->toArray());
+echo '</pre>';
+
+echo '<br><br>->toObject([\'paramB\']) <br>';
+echo '<pre>';
+var_dump($class3->toObject(['paramB']));
+echo '</pre>';
+
+echo '<br><br>->toJson() <br>';
+echo '<pre>';
+echo $class3->toJson();
+echo '</pre>';
+
+
+
+echo '<br><br>';
+echo " <br> ===================================================================================================================== <br>";
+echo " TEST 10 (TestClass4.php) : Override methods";
+echo " <br> ===================================================================================================================== <br><br>";
+
+
+$class4->setParamA("my text");
+
+echo $class4->getParamA() . '<br>';
+echo $class4->getParamB();

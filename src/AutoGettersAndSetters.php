@@ -7,6 +7,11 @@ use JocelimJr\Exceptions\MethodNotImplementedException;
 
 trait AutoGettersAndSetters
 {
+
+    // private array $AGS_GETTERS_SETTERS = [];
+    // private array $AGS_GETTERS = [];
+    // private array $AGS_SETTERS = [];
+
     /**
      * __call
      *
