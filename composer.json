@@ -1,0 +1,26 @@
+{
+    "name": "jocelimjr/auto-getters-and-setters",
+    "description": "Auto getters and setter to class",
+    "homepage": "https://github.com/jocelimjr2000/AutoGettersAndSetters",
+    "keywords": ["getter", "setter", "getters", "setters", "trait"],
+    "license": "MIT",
+    "authors":
+    [
+        {
+            "name": "Jocelim Junior",
+            "homepage": "https://github.com/jocelimjr2000",
+            "role": "Developer"
+        }
+    ],
+
+    "require": {
+        "php": ">=7.4.0"
+    },
+
+    "autoload":	{
+        "psr-4": {
+            "JocelimJr\\": "src/",
+            "Tests\\": "tests/"
+        }
+    }
+}
